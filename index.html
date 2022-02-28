@@ -5,20 +5,48 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1450">
     <title>ABEL</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"><!--aos css 연결-->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->
+    
     <link rel="stylesheet" href="main_style.css">
     <link href="images/H_logo.png" rel="icon" type="image/png" sizes="32x32" >
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+
+    
 </head>
 
 <body>
     <div class="wrap">
-    <div id="header"><!--bg 투명도 rgba & fixed 고정-->
+    <div id="header"><!--bg 투명도 rgba-->
         <div class="header_inner"><!--margin auto, width 1280px-->
             <a href="#"><img src="images/logo.png" alt="로고"></a>
             <ul class="nav">
-                <li><a href="#">BRAND</a></li>
-                <li><a href="#">PRODUCT</a></li>
-                <li><a href="#">COMMUNITY</a></li>
-                <li><a href="#">ABEL PROJECT</a></li>
+                <li><a href="#">BRAND</a>
+                    <ul class="sub">
+                        <li><a href="#">ABOUT ABEL</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">PRODUCT</a>
+                    <ul class="sub">
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BEST</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">COMMUNITY</a>
+                    <ul class="sub">
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">REVIEW</a></li>
+                        <li><a href="#">EVENT</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABEL PROJECT</a>
+                    <ul class="sub">
+                        <li><a href="#">PROJECT</a></li>
+                        <li><a href="#">CAMPAIGN</a></li>
+                    </ul>
+                </li>
             </ul><!--nav E-->
             <ul class="icon">
                 <li><a href="#"><img src="images/icon1.png" alt="아이콘1"></a></li>
@@ -31,71 +59,78 @@
 
     <div class="video">
         <video muted autoplay loop>
-            <source src="video/main_bg_3.mp4" type="video/mp4">
+            <source src="video/16main_bg.mp4" type="video/mp4">
         </video>
+        <h1 class="v_title1" >
+            The Simplest<br>
+            The Best 'CHOICE'<br>
+            for a Clean Future.<br>
+            Please Continue with Abel.<br>
+        </h1>
+		<h1 class="v_title2">It's Your Own Special Clean Beauty.</h1>
     </div><!--video E-->
 
     <div id="brand">
-        <a href="#"><img src="images/symbol.png" alt="심볼1"></a>
-        <h1>ABOUT ABEL</h1>
-        <h2>환경과 지구를 생각하는 아벨의 이야기를 소개합니다.</h2>
-        <p>급속도로 빨라지는 환경오염과 생태계 변화, 기이한 날씨 현상.  
+        <a href="#"><img src="images/symbol.png" alt="심볼1" data-aos="fade" data-aos-delay="0"></a>
+        <h1 data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="100">ABOUT ABEL</h1>
+        <h2 data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="200">환경과 지구를 생각하는 아벨의 이야기를 소개합니다.</h2>
+        <p data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="400">급속도로 빨라지는 환경오염과 생태계 변화, 기이한 날씨 현상.  
             우리가 마주하고 있을 미래를 위해 앞으로 더 나은 세상, 더 밝은 세상을 만들 수 있도록 <br>
             우리 주변 사람들부터 쉽게 시작할 수 있는 것이 무엇이 있을까 하여 
             탄생된 클린 뷰티 화장품 브랜드입니다. <br>
             당신만의 특별한 클린 뷰티가 되겠습니다.</p>
         <ul class="b_box">
-            <li class="box1">
-                <a href="#"><img src="images/brand_1.png" alt="브랜드1"></a> <br>
+            <li class="box1" div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="500">
+                <a href="#"><img src="images/brand_1.png" alt="브랜드1" ></a> <br>
                 <a href="#">착한성분</a> <br>
                 <a href="#">Good Ingredients</a>
             </li>
-            <li class="box2">
-                <a href="#"><img src="images/brand_2.png" alt="브랜드2"></a> <br>
+            <li class="box2" div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="700">
+                <a href="#"><img src="images/brand_2.png" alt="브랜드2" ></a> <br>
                 <a href="#">휴식</a> <br>
                 <a href="#">Relaxing</a>
             </li>
-            <li class="box3">
+            <li class="box3" div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="900">
                 <a href="#"><img src="images/brand_3.png" alt="브랜드3"></a> <br>
                 <a href="#">심플함</a> <br>
                 <a href="#">Simplicity</a>
             </li>
-            <li class="box4">
+            <li class="box4" div data-aos="fade-up" data-aos-easing="ease-out-back" data-aos-duration="1100">
                 <a href="#"><img src="images/brand_4.png" alt="브랜드4"></a> <br>
                 <a href="#">지속가능한</a> <br>
                 <a href="#">Sustainable</a>
             </li>
         </ul>
-        <div class="btn1">
+        <div class="btn1" div data-aos="fade-up" data-aos-easing="ease-out-back">
             <a href="#">더 알아보기</a>
         </div>
     </div><!--brand E-->
     
     <div id="campaign">
         <div class="campaign_inner">
-            <a href="#"><img src="images/symbol.png" alt="심볼1"></a>
-            <h1>Campaign Together !</h1>
-            <h2>여러분들과 함께한 캠페인을 통해 이룬 감사한 성과입니다. 
+            <a href="#"><img src="images/symbol.png" alt="심볼1" data-aos="fade"></a>
+            <h1 data-aos="fade-down" data-aos-easing="ease-out-back">Campaign Together !</h1>
+            <h2 data-aos="fade-down" data-aos-easing="ease-out-back">여러분들과 함께한 캠페인을 통해 이룬 감사한 성과입니다. 
             앞으로도 함께 실천해주세요!</h2>
         </div>
         <div class="c_box"><!--margin auto-->
-            <img src="images/dot_line1.png" alt="점라인" class="dot_1">
-            <img src="images/dot_line2.png" alt="점라인" class="dot_2">
+            <img src="images/dot_line1.png" alt="점라인" class="dot_1" data-aos="fade-right">
+            <img src="images/dot_line2.png" alt="점라인" class="dot_2" data-aos="fade-left">
             <div class="c_box1"><!--float left-->
-                <div class="c_text">
-                    <h1 class="number1">10,253</h1>
+                <div class="c_text" data-aos="fade-right">
+                    <h1 class="number1 counter">10,253</h1>
                     <p>우리가 살린 동물의 수</p>
                 </div>
-                <div class="c_img">
+                <div class="c_img" data-aos="zoom-out-left">
                     <img src="images/campaign1.jpg" alt="캠페인1">
                 </div>
             </div><!--c_box1 E-->
             <div class="c_box2"><!--float left-->
-                <div class="c_img">
+                <div class="c_img" data-aos="zoom-out-right">
                     <img src="images/campaign2.jpg" alt="캠페인2">
                 </div>
-                <div class="c_text">
-                    <h1 class="number2">320,667.9</h1>
+                <div class="c_text" data-aos="fade-left">
+                    <h1 class="number2 counter">320,667.9</h1>
                     <p>우리가 줄인 플라스틱 병 수</p>
                 </div>
                 
@@ -106,7 +141,7 @@
     </div><!--campaign E-->
 
     <div id="banner">
-        <div class="banner_inner">
+        <div class="banner_inner" data-aos="fade-up" data-aos-easing="ease-out-back">
             <a href="#"><img src="images/symbol2.png" alt="심볼2"></a>
             <p>아벨과 함께  생활속에서 환경을 지키는 <br>
                 사람들의 이야기. <br>
@@ -120,12 +155,12 @@
 
     <div id="best">
         <div class="best_inner">
-            <a href="#"><img src="images/symbol.png" alt="심볼1"></a>
-            <h1>BEST SELLER</h1>
-            <h2>그동안 가장 많은 사랑을 받은 상품들을 소개합니다 ! </h2>
+            <a href="#"><img src="images/symbol.png" alt="심볼1" data-aos="fade"></a>
+            <h1 data-aos="fade-down" data-aos-easing="ease-out-back">BEST SELLER</h1>
+            <h2 data-aos="fade-down" data-aos-easing="ease-out-back">그동안 가장 많은 사랑을 받은 상품들을 소개합니다 ! </h2>
         </div><!--best_inner E-->
         <div class="best_product"><!--width 1280px-->
-            <div class="product">
+            <div class="product" data-aos="zoom-out" data-aos-duration="200">
                 <ul>
                     <li><a href="#"><img src="images/product1.png" alt="1"></a></li>
                     <li>딥 프레쉬 바디 워시 150mL <br>
@@ -139,7 +174,7 @@
                 </ul>
             </div><!--product E-->
 
-            <div class="product">
+            <div class="product" data-aos="zoom-out" data-aos-duration="400">
                 <ul>
                     <li><a href="#"><img src="images/product2.png" alt="2"></a></li>
                     <li>딥 프레쉬 바디 로션 150mL <br>
@@ -153,7 +188,7 @@
                 </ul>
             </div><!--product E-->
 
-            <div class="product">
+            <div class="product" data-aos="zoom-out" data-aos-duration="600">
                 <ul>
                     <li><a href="#"><img src="images/product3.png" alt="3"></a></li>
                     <li>딥 프레쉬 클렌징 폼 150mL <br>
@@ -167,7 +202,7 @@
                 </ul>
             </div><!--product E-->
 
-            <div class="product">
+            <div class="product" data-aos="zoom-out" data-aos-duration="800">
                 <ul>
                     <li><a href="#"><img src="images/product4.png" alt="4"></a></li>
                     <li>딥 프레쉬 씨워터 세럼 50mL <br>
@@ -180,7 +215,7 @@
                 </ul>
             </div><!--product E-->
 
-            <div class="product">
+            <div class="product" data-aos="zoom-out" data-aos-duration="1000">
                 <ul>
                     <li><a href="#"><img src="images/product5.png" alt="5"></a></li>
                     <li>비자 시카 프레쉬 세럼 50mL <br>
@@ -194,7 +229,7 @@
                 </ul>
             </div><!--product E-->
 
-            <div class="product">
+            <div class="product" data-aos="zoom-out" data-aos-duration="1200">
                 <ul>
                     <li><a href="#"><img src="images/product6.png" alt="6"></a></li>
                     <li>그린티 퓨어 씨드 세럼 50mL <br>
@@ -208,23 +243,25 @@
                 </ul>
             </div><!--product E-->
         </div><!--best_product E-->
-        <div class="btn1">
+        <div class="btn1"  div data-aos="fade-up" data-aos-easing="ease-out-back" >
             <a href="#">더보기</a>
         </div>
     </div><!--best E-->
 
+
+
     <div id="evet">
         <div class="event_inner">
             <div class="event_text">
-                <a href="#"><img src="images/symbol.png" alt="심볼1"></a>
-                <h1>EVENT</h1>
-                <h2>이번 달의 이벤트는 무엇일까요? 아벨이 준비한 푸짐한 혜택 놓치지 마세요!</h2>
+                <a href="#"><img src="images/symbol.png" alt="심볼1" data-aos="fade" ></a>
+                <h1 data-aos="fade-down" data-aos-easing="ease-out-back">EVENT</h1>
+                <h2 data-aos="fade-down" data-aos-easing="ease-out-back">이번 달의 이벤트는 무엇일까요? 아벨이 준비한 푸짐한 혜택 놓치지 마세요!</h2>
             </div><!--event_text E-->
-            <div class="event_banner">
+            <div class="event_banner" data-aos="flip-up" >
                 <img src="images/event_banner.png" alt="이벤트 배너 이미지" class="banner_img">
             </div><!--event_banner E-->
-            <div class="text_box">
-                <div class="banner_text">
+            <div class="text_box" >
+                <div class="banner_text" data-aos="flip-up">
                     <h1>NEW ARRIVAL EVENT !</h1>
                     <p>공식몰 첫 구매 혜택 !</p>
                     <p>출시와 동시에 화제가 된 </p>
@@ -239,34 +276,34 @@
 
     <div id="sns">
         <div class="sns_inner">
-            <a href="#"><img src="images/symbol3.png" alt="심볼3"></a>
-            <h1>SEE YOU ON INSTAGRAM</h1>
-            <p>@Abel_beauty_official</p>
+            <a href="#"><img src="images/symbol3.png" alt="심볼3" data-aos="fade"></a>
+            <h1 data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="100">SEE YOU ON INSTAGRAM</h1>
+            <a href="#"><p data-aos="fade-down" data-aos-easing="ease-out-back" data-aos-delay="200">@Abel_beauty_official</p></a>
         </div><!--sns_inner E-->
         <div class="sns_box"><!--margin auto-->
-            <div class="s_box1">
-                <img src="images/sns_1.jpg" alt="1">
+            <div class="s_box1" div data-aos="fade-up" data-aos-easing="ease-out-back">
+                <a href="#"><img src="images/sns_1.jpg" alt="1"></a>
             </div><!--s_box1 E-->
-            <div class="s_box2">
-                <img src="images/sns_2.jpg" alt="2">
+            <div class="s_box2" div data-aos="fade-up" data-aos-easing="ease-out-back">
+                <a href="#"><img src="images/sns_2.jpg" alt="2"></a>
             </div><!--s_box2 E-->
-            <div class="s_box3">
-                <img src="images/sns_3.jpg" alt="3">
+            <div class="s_box3" div data-aos="fade-up" data-aos-easing="ease-out-back">
+                <a href="#"><img src="images/sns_3.jpg" alt="3"></a>
             </div><!--s_box3 E-->
-            <div class="s_box4">
-                <img src="images/sns_4.jpg" alt="4">
+            <div class="s_box4" div data-aos="fade-up" data-aos-easing="ease-out-back">
+                <a href="#"><img src="images/sns_4.jpg" alt="4"></a>
             </div><!--s_box4 E-->
-            <div class="s_box5">
-                <img src="images/sns_5.jpg" alt="5">
+            <div class="s_box5" div data-aos="fade-up" data-aos-easing="ease-out-back">
+                <a href="#"><img src="images/sns_5.jpg" alt="5"></a>
             </div><!--s_box5 E-->
-            <div class="s_box6">
-                <img src="images/sns_6.jpg" alt="6">
+            <div class="s_box6" div data-aos="fade-up" data-aos-easing="ease-out-back" >
+                <a href="#"><img src="images/sns_6.jpg" alt="6"></a>
             </div><!--s_box6 E-->
-            <div class="s_box7">
-                <img src="images/sns_7.jpg" alt="7">
+            <div class="s_box7" div data-aos="fade-up" data-aos-easing="ease-out-back">
+                <a href="#"><img src="images/sns_7.jpg" alt="7"></a>
             </div><!--s_box7 E-->
-            <div class="s_box8">
-                <img src="images/sns_8.jpg" alt="8">
+            <div class="s_box8"div data-aos="fade-up" data-aos-easing="ease-out-back" >
+                <a href="#"><img src="images/sns_8.jpg" alt="8"></a>
             </div><!--s_box8 E-->
         </div><!--sns_box E-->
     </div><!--sns E-->
@@ -296,5 +333,35 @@
     <div class="TOP">
         <a href="#"><img src="images/top_button.png" alt="button"></a>
     </div><!--TOP E-->
+
+
+<!--서브 메뉴 늘어나는 효과-->
+<script>
+    $(function(){
+        $(".nav>li").hover(function(){
+            $(".header_inner").toggleClass("slide");
+        });
+    });
+</script>
+
+
+<!--나타나는 이펙트-->
+    <script>
+        AOS.init();
+    </script>
+
+    
+<!--숫자 카운팅-->
+<script>
+    jQuery(document).ready(function( $ ) {
+        $('.counter').counterUp({
+            delay: 100,
+            time: 2400
+        });
+    });
+  </script>
+
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
 </body>
 </html>

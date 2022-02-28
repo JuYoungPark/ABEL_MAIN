@@ -34,55 +34,60 @@ body{font-size:15px;
     left: 0;
 	z-index:100;
 }
-	
+
 .header_inner{
 	width:1280px;
     height:183px;
 	margin:auto;
+    transition: all 0.7s;
 }
+.slide{
+    height: 280px;
+}/*순서 뒤로 옮기자!*/
+
 .header_inner>a{
     padding-top: 24px;
 }
-.header_inner a{
+.header_inner> a{
 	float:left;
     color: white;
 }
 
 .nav{
 	float:left;
-    padding-left: 120px;
+    padding-left: 50px;
 }
 	
-.nav li{
-    font-family: Georgia,Times,Times New Roman,serif; 
-    font-weight: lighter;
-    letter-spacing: 1px;
+.nav>li{
 	float:left;
-    padding: 2px 40px;
-    padding-top: 100px;
+    padding-top: 110px;
+    padding-bottom: 45px;
 }
 
-.nav li a{
+.nav>li>a{
 	font-size:18px;
 	display:block;
+    color: white;
+    letter-spacing:2px;
+    font-weight: 500;
+    padding: 4px 55px;
 }
-
-.nav li:hover a{
-    font-size: 20px;
+.nav>li:hover> a{
+    color:#0c143b;
 }
-.nav li:nth-child(1):hover{
+.nav>li:nth-child(1):hover>a{
     background: url(images/nav_line1.png) no-repeat center bottom;
 }
-.nav li:nth-child(2):hover{
+.nav>li:nth-child(2):hover>a{
     background: url(images/nav_line2.png) no-repeat center bottom;
 }
-.nav li:nth-child(3):hover{
+.nav>li:nth-child(3):hover>a{
     background: url(images/nav_line3.png) no-repeat center bottom;
 }
-.nav li:nth-child(4):hover{
+.nav>li:nth-child(4):hover>a{
     background: url(images/nav_line4.png) no-repeat center bottom;
 }
-	
+
 .icon{
 	float:right;
 }
@@ -90,19 +95,77 @@ body{font-size:15px;
 .icon li{
 	float:left;
     padding-left: 20px;
-    padding-top: 100px;
+    padding-top: 110px;
 }
 
-/*video*/
-.video video{
+/*sub*/
+.sub>li a{
+    display: block;
+    padding: 6px 0;
+    text-align: center;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 1.5px;
+}
+.sub>li:hover> a{
+    color:white;
+    transition: all 0.7s;
+}
+.nav> li{
+    position: relative;
+}
+.sub{
+    position: absolute;
+    top: 160px;
+    left: 0;
     width: 100%;
 }
+
+.sub{
+    display: none;
+}
+.nav>li:hover .sub{
+    display: block;
+}
+
+
+/*video*/
 .video{
 	width:100%;
 	height:900px;
     overflow: hidden;
+    position:relative;
 }
-
+video{
+	width:100%;
+	display:block;}
+    
+.v_title1{
+	position:absolute;
+	top:47%;
+	left:65%;
+	transform:translate(-50%,-50%);
+	font-weight:500;
+	text-align:right;
+	font-size:45px;
+	line-height:60px;
+	color:#fff;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	letter-spacing:5px;
+}
+.v_title2{
+	position:absolute;
+	top:71%;
+	left:65%;
+	transform:translate(-50%,-50%);
+	font-weight:500;
+	text-align:right;
+	font-size:45px;
+	line-height:60px;
+	color:#fff;
+	font-family:Georgia, 'Times New Roman', Times, serif;
+	letter-spacing:5px;
+}
 
 /*brand*/
 #brand{
@@ -168,6 +231,12 @@ body{font-size:15px;
     display: inline-block;
     border-radius: 17.5px;
 }
+.btn1 a:hover{
+    background-color: white;
+    border: #6384a9 0.7px solid;
+    color: #8793ae;
+    transition: all 0.8s;
+}
 
 
 /*campaign*/
@@ -231,11 +300,13 @@ body{font-size:15px;
 .dot_1{
     position: absolute;
     top: 28%;
+    z-index: 10;
 }
 .dot_2{
     position: absolute;
     bottom: 34%;
     left: 48%;
+    z-index: 100;
 }
 
 /*banner*/
@@ -267,7 +338,9 @@ body{font-size:15px;
     padding: 3px 40px;
     display: inline-block;
 }
-
+.btn2 a:hover{
+    color: #37485c;
+}
 /*best*/
 .best_inner{
     text-align: center;
@@ -324,6 +397,11 @@ body{font-size:15px;
     text-align: center;
     padding-top: 90px;
     padding-bottom: 195px;
+}
+#best .btn1 a:hover{
+    background-color: white;
+    color: #8793ae;
+    transition: all 0.8s;
 }
 
 /*event*/
@@ -386,6 +464,10 @@ body{font-size:15px;
     display: inline-block;
     margin-top: 20px;
 }
+.btn3 a:hover{
+    background-color: white;
+    color: #37485c;
+    transition: all 0.8s;}
 
 /*sns*/
 .sns_inner{
@@ -401,6 +483,22 @@ body{font-size:15px;
     font-size: 20px;
     padding: 20px 0;
     color: #596275;
+}
+.sns_box>div>a{
+    height: 100%; 
+    transition : .2s ease, padding .2s ease;
+    display:inline-block;
+}
+.sns_box>div>a:hover{
+    padding-bottom: 50px; 
+    transform: translate(0,-20px);
+}
+.sns_inner p{
+    display: inline-block;
+}
+.sns_inner p:hover{
+    color: #3f667e;
+    font-weight: 500;
 }
 .sns_inner p{
     font-size: 16px;
